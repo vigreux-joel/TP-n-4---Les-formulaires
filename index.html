@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Les formulaires">
+    <title>Les Formulaires</title>
+</head>
+<body>
+    
+    <h1>Vigreux Joël - Les formulaires”</h1>
+
+    <h2>Mon premier formulaire</h2>
+
+    <form action="test.html" method="POST">
+        <input type="radio" id="1homme" name="genre">
+        <label for="1homme" >  Homme</label>
+        <input type="radio" id="1femme" name="genre">
+        <label for="femme">Femme</label>
+        <input type="radio" id="1non_renseigne" name="genre" checked>
+        <label for="1non_renseigne">non-renseigné</label>
+
+        <br><br>
+
+        <label for="1fname">Nom:</label>
+        <input type="text" id="1fname" name="fname" placeholder="Nom" required>
+        <br>
+        <br>
+        <label for="1lname">Nom:</label>       
+        <input type="text" id="1lname" name="lname" placeholder="Prénom" required>
+
+        <br><br>
+
+        <label for="1old"> Age:</label>
+        <input type="number" id="1old" name="old" placeholder="16" min="16" max="99" required>
+
+        <br><br>
+
+        <label for="1email">E-mail:</label>
+        <input type="email" id="1email" name="email" placeholder="exemple@gmail.com" required>
+
+        <br><br>
+
+        <label for="1message">Message:</label>
+        <textarea id="1message" name="message" rows="3" cols="40" placeholder="Entrez votre message ici"></textarea>
+
+        <br><br>
+
+        <input type="checkbox" id="1accepter" name="accepter" required>
+        <label for="1accepter">
+            En cochant cette case j'accepte les conditions<br>
+            relatives à l'utilisation de mes données personnelles.<br>
+            (accéder aux mentions légales)
+        </label>
+
+        <br><br>
+
+        <input type="submit" value="Envoyer le message">
+
+    </form>
+
+    <hr>
+
+    <h2>Ensemble de champs</h2>
+
+    <form action="test.html" method="POST">
+
+        <fieldset>
+            <legend>MON SECOND FORMULAIRE</legend>
+
+            <fieldset>
+                <legend>Identité</legend>
+                <input type="radio" id="homme" name="genre">
+                <label for="homme" >  Homme</label>
+                <input type="radio" id="femme" name="genre">
+                <label for="femme">Femme</label>
+                <input type="radio" id="non_renseigne" name="genre" checked>
+                <label for="non_renseigne" >non-renseigné</label>
+        
+                <br><br>
+        
+                <label for="fname">Nom:</label>
+                <input type="text" id="fname" name="fname" placeholder="Nom" required>
+                <br>
+                <br>
+                <label for="lname">Nom:</label>       
+                <input type="text" id="lname" name="lname" placeholder="Prénom" required>
+        
+                <br><br>
+        
+                <label for="old"> Age:</label>
+                <input type="number" id="old" name="old" placeholder="16" min="16" max="99" required>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Situation personnelle</legend>
+
+                <input type="radio" id="celibataire" name="situation" checked>
+                <label for="celibataire" >célibataire</label>
+                <input type="radio" id="marie" name="situation">
+                <label for="marie">marié</label>
+                <input type="radio" id="veuf" name="situation">
+                <label for="veuf">veuf</label>
+                <input type="radio" id="union_libre" name="situation">
+                <label for="union_libre">union libre</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact</legend>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="exemple@gmail.com" required>
+                <br><br>
+                <label for="phone">Telephone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="0612345678" pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$" required>
+                <br><br>
+            </fieldset>
+            <br>
+            <input type="checkbox" id="accepter" name="accepter" required>
+            <label for="email">
+                En cochant cette case j'accepte les conditions<br>
+                relatives à l'utilisation de mes données personnelles.<br>
+                (accéder aux mentions légales)
+            </label>
+            <br><br>
+            <input type="submit" value="Transmettre mes coordonnées">
+        </fieldset>
+        <br>
+
+    </form>
+
+
+</body>
+</html>
